@@ -316,10 +316,7 @@
 #metaunix-revitx-app .onboard-nodes .revit-official-icon{width:32px;height:32px}
 @media(max-width:760px){#metaunix-revitx-app .revit-platform-name{gap:8px}
 #metaunix-revitx-app .revit-official-icon{width:36px;height:36px}}
-/* Sixshop shell suppression: target pathname + Page ID are both checked before the class is added. */
-body.metaunix-revitx-route-active #siteHeader,
-body.metaunix-revitx-route-active .site-header-content-group,
-body.metaunix-revitx-route-active nav.headerMenuList,
+/* Only Sixshop footer is hidden on the double-locked Revit X route. Keep native header and navigation visible. */
 body.metaunix-revitx-route-active #siteFooter,
 body.metaunix-revitx-route-active .site-footer,
 body.metaunix-revitx-route-active #footer {display:none!important;}
