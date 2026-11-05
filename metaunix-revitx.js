@@ -1,4 +1,4 @@
-/* METAUNIX Revit X Sixshop deployment | 2026-11-05-01
+/* METAUNIX Revit X Sixshop deployment | 2026-11-05-02
  * Exact pathname + Page ID double lock. Other pages remain untouched.
  * Original page interactions and Monday URLs preserved.
  */
@@ -43,7 +43,7 @@
   }
   function hideShell(){
     // Only site shell; never hide the landing root or any element inside it.
-    const targets=['#siteHeader','.site-header-content-group','#siteFooter','.site-footer','#footer','footer','.footer'];
+    const targets=['#siteFooter','.site-footer','#footer','footer','.footer'];
     for(const selector of targets)document.querySelectorAll(selector).forEach(el=>{if(root&&!root.contains(el))rememberAndHide(el);});
   }
   function startOriginalInteractions(){
