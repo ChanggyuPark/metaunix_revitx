@@ -316,8 +316,65 @@
 #metaunix-revitx-app .onboard-nodes .revit-official-icon{width:32px;height:32px}
 @media(max-width:760px){#metaunix-revitx-app .revit-platform-name{gap:8px}
 #metaunix-revitx-app .revit-official-icon{width:36px;height:36px}}
-/* Only Sixshop footer is hidden on the double-locked Revit X route. Keep native header and navigation visible. */
-body.metaunix-revitx-route-active #siteFooter,
-body.metaunix-revitx-route-active .site-footer,
-body.metaunix-revitx-route-active #footer {display:none!important;}
+/* v03: Sixshop native header, navigation and footer are all retained. */
 body.metaunix-revitx-route-active #metaunix-revitx-app{display:block;position:relative;width:100%;max-width:none;margin:0;padding:0;min-height:100vh;background:#fff;color:#121212;font-family:KR,Arial,sans-serif;word-break:keep-all;}
+
+/* v03 / Sixshop inherited typography isolation — only inside the Revit X root */
+#metaunix-revitx-app{
+  line-height:1.65;
+  font-size:16px;
+  font-weight:400;
+  text-align:left;
+  letter-spacing:normal;
+}
+#metaunix-revitx-app h1,
+#metaunix-revitx-app h2,
+#metaunix-revitx-app h3,
+#metaunix-revitx-app h4{
+  padding:0;
+  line-height:1.4;
+  word-break:keep-all;
+}
+#metaunix-revitx-app p{margin-top:0;line-height:1.85;}
+#metaunix-revitx-app small{line-height:1.5;}
+#metaunix-revitx-app .compare small{
+  display:block;
+  line-height:1.6;
+  margin:0 0 12px;
+  letter-spacing:.6px;
+}
+#metaunix-revitx-app .compare h3{
+  margin:0 0 14px;
+  line-height:1.35;
+}
+#metaunix-revitx-app .compare p{
+  margin:0 0 10px;
+  line-height:1.85;
+}
+#metaunix-revitx-app .original-badge{
+  vertical-align:middle;
+  line-height:1.35;
+  margin-bottom:24px;
+  white-space:normal;
+}
+#metaunix-revitx-app .original-badge *{line-height:inherit;}
+#metaunix-revitx-app .developed-prefix{
+  line-height:1.6;
+  margin:0 0 16px;
+}
+#metaunix-revitx-app .developed-mark{
+  margin:0 0 20px;
+  line-height:1.35;
+}
+#metaunix-revitx-app .developed-mark strong{line-height:1.4;}
+#metaunix-revitx-app .productmark{line-height:1.2;}
+#metaunix-revitx-app .eyebrow{
+  line-height:1.5;
+  margin-bottom:15px;
+}
+#metaunix-revitx-app .onboard-title span,
+#metaunix-revitx-app .onboard-nodes span{line-height:1.65;}
+@media(max-width:760px){
+  #metaunix-revitx-app .compare small{margin-bottom:10px;}
+  #metaunix-revitx-app .original-badge{margin-bottom:18px;}
+}
